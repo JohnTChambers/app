@@ -1,0 +1,15 @@
+<form action="/application_form" method="post">
+    <d> {{form.category.label}}</d>
+    <d> {{form.category(class='form-control')}}</d>
+    <br>    <br>
+    <d> {{form.name.label}}</d>
+    <d> {{form.name(class='form-control')}}</d>
+
+    {% if results %}}
+    <br>    <br>
+    <br><d>RESULTS:</d></br>
+    <br><d>RESULTS: {{results}}</d></br>
+    {% endif %}
+</form>
+
+
