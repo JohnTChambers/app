@@ -20,13 +20,13 @@ app.config['SECRET_KEY'] = SECRET_KEY
 # routes
 @app.route("/")
 def main():
-    return "<p>sup</p>"
+    return render_template("homepage.html")
 
 @app.route("/hello_world")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "Hello World!"
 
-@app.route("/application_form", methods=["GET", "POST"])
+@app.route("/xxx", methods=["GET", "POST"])
 def query_db():
     form = InputDataForm()
     if request.method == "POST":

@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
+<div id="banner">
+  <p> Hello! Welcome to I-need-cat-pics-ASAP.com ! </p>
+  <a href="/">Homepage</a>
+ <!--<a href="{{ url_for('application_form') }}">app</a> -->
+  <a href="{{ url_for('hello_world') }}">Hello World!</a>
+</div>
+
+{% block content %}
+{% endblock %}
