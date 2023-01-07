@@ -1,10 +1,8 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/banner.css') }}">
 <div id="banner">
-  <p> Hello! Welcome to I-need-cat-pics-ASAP.com ! </p>
-  <a href="/">Homepage</a>
- <!--<a href="{{ url_for('application_form') }}">app</a> -->
-  <a href="{{ url_for('hello_world') }}">Hello World!</a>
+  <img src="{{url_for('static', filename='cat1.jpg')}}" alt="Funny cat" class="banner-img">
+  <h1 class="banner-title">Welcome to cat pics central</h1>
+  <img src="{{url_for('static', filename='cat2.jpg')}}" class="banner-img">
 </div>
-
 {% block content %}
 {% endblock %}

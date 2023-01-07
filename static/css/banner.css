@@ -1,23 +1,18 @@
 #banner {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  color: #fff;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.banner-img {
+  height: 150px;
+  width: 200px;
+}
+
+.banner-title {
+  color: #333;
+  margin: 0;
   text-align: center;
-}
-
-#banner img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
-
-#banner h1 {
-  font-size: 3em;
-  margin: 0;
-  padding: 20px 0;
-}
-
-#banner p {
-  font-size: 1.5em;
-  margin: 0;
-  padding: 20px 0;
 }

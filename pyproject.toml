@@ -10,6 +10,7 @@ python = "^3.8"
 flask = "^2.2.2"
 sqlalchemy = "^1.4.45"
 Flask-WTF = "^1.0.1"
+psycopg2 = "^2.9.5"
 
 [build-system]
 requires = ["poetry-core"]

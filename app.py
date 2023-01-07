@@ -26,7 +26,7 @@ def main():
 def hello_world():
     return "Hello World!"
 
-@app.route("/xxx", methods=["GET", "POST"])
+@app.route("/application", methods=["GET", "POST"])
 def query_db():
     form = InputDataForm()
     if request.method == "POST":
@@ -36,6 +36,6 @@ def query_db():
         session, engine = set_up_session(connection_string)
         # query records
         records = session.query(AppData).filter(AppData.category == request.form["category"]).all()
-        return render_template("template.html", form=form, results=records)
+        return render_template("application.html", form=form, results=records)
 
-    return render_template("template.html", form=form)
+    return render_template("application.html", form=form)
