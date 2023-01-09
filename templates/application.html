@@ -5,13 +5,15 @@
     <d> {{form.category.label}}</d>
     <d> {{form.category(class='form-control')}}</d>
     <br>    <br>
-    <d> {{form.name.label}}</d>
-    <d> {{form.name(class='form-control')}}</d>
+    <d> {{form.search_term.label}}</d>
+    <d> {{form.search_term(class='form-control')}}</d>
+
+    <button type=submit class="btn btn-primary"> Submit Query<span class="oi oi-check" title="Submit"></span></button>
 
     {% if results %}}
     <br>    <br>
     <br><d>RESULTS:</d></br>
-    <br><d>RESULTS: {{results}}</d></br>
+    <br><d>RESULTS: {{records|safe}}</d></br>
     {% endif %}
 </form></html>
 {% endblock %}

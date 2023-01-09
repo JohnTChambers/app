@@ -11,6 +11,7 @@ flask = "^2.2.2"
 sqlalchemy = "^1.4.45"
 Flask-WTF = "^1.0.1"
 psycopg2 = "^2.9.5"
+pre-commit = "^2.21.0"
 
 [build-system]
 requires = ["poetry-core"]

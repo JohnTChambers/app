@@ -9,5 +9,5 @@ class InputDataForm(FlaskForm):
     A class that represents the input-data form that will be used in this application
     """
 
-    category = SelectField('SelectField :', choices=["a", "b", "c"], validate_choice=True)
-    name = StringField("Signals Notebook Name", validators=[DataRequired()])
+    category = SelectField('Application options :', choices=["Random", "Display All", "Search"], validate_choice=True)
+    search_term = StringField("Species common name")
